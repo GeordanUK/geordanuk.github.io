@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geek For An Hour</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+	
+	h1 {
+      font-size: 70px;
+	  padding-right: 50px;
+	  color: #014964;
+	}
+
+	p {
+	  color: #014964;
+	}	
+
+	h2 {
+	  color: #014964;
+	}
+
+    .header {
+      background-color: #B5F5FB;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .header img {
+      max-width: 500px;
+      height: auto;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #f0f0f0;
+      padding: 100px;
+	  
+      width: 40%; /* Sidebar takes up 25% of the width */
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+	
+    .main-content img {
+      max-width:100%;
+      height: auto;
+    }
+
+	.button {
+	  background-color: #04AA6D; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 16px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	}
+	
+	.button2 {
+	  background-color: #014964; 
+	  color: white; 
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	  border-radius: 12px;
+	}
+
+	.button2:hover {
+	  background-color: #B5F5FB;
+	  color: black;
+	}	
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%; /* Sidebar takes full width on smaller screens */
+		padding: 25px;
+		
+      }
+	  .header img {
+		  max-width: 200px;
+		  height: auto;
+		}
+	  h1 {
+			font-size: 40px;
+		}
+	.main-content img {
+		  max-width: 0px;
+		  height: auto;
+		}		
+	p {
+		padding-right: 100px;
+		}	
+    }
+	
+	
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Logo" />
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <h1>Do you struggle with technlogy?</h1>
+    <p>Are you someone who struggles to operate modern technology? Maybe you need help setting up your new phone or general 
+		advice with your gadgets which have overly complicated settings that make no sense to you.</p>
+
+	<p>If this sounds like you, I am here to help.</p>
+
+	<p>I have worked with tech all my life and have a keen interest in the latest gadgets, 
+	how they work and how to fix them if they’re not working correctly. I have a long history working in IT 
+	and I am the ‘technical person’ for a lot of people in my personal life, and have fixed a wide range of smart devices 
+	from phones to TVs, speakers, computers, printers and more.</p>
+
+	<p>With a personable and ‘can-do’ attitude, I can assure you that no issue of yours is too big or small.
+	No matter the issue presented, I will do my best to fix it and provide you with the knowledge needed should this happen again.</p>
+
+	<h2>Pricing</h2>
+	<p>Starting from £20 an hour, I can visit your home or premises and get straight to work on trouble-shooting and 
+	fixing your technical devices. Whether it be one item or five, the charge remains the same depending on the time spent helping you.</p>
+
+	<h2>Testimonials</h2>
+	<p>(Insert customer testimonials here)</p>
+	
+	<a href="mailto:support@geekforanhour.com?subject=I Need Help!">
+	<button class="button button2">Email Me</button>
+	</a>
+	
+	
+  </div>
+  <div class="main-content">
+    <img src="image.jpg"/>
+  </div>
+</div>
+
+</body>
+</html>
